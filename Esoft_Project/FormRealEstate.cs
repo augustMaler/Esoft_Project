@@ -19,7 +19,7 @@ namespace Esoft_Project
             ShowRealEstatesSet();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxType.SelectedIndex == 0)
             {
@@ -157,7 +157,7 @@ namespace Esoft_Project
             listViewLand.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
 
-        private void buttonAdd_Click(object sender, EventArgs e)
+        void buttonAdd_Click(object sender, EventArgs e)
         {
             RealEstateSet realEstateSet = new RealEstateSet();
             realEstateSet.Type = comboBoxType.SelectedIndex;
@@ -185,7 +185,7 @@ namespace Esoft_Project
             ShowRealEstatesSet();
         }
 
-        private void textBoxFloor_KeyPress(object sender, KeyPressEventArgs e)
+        void textBoxFloor_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
 
@@ -196,7 +196,7 @@ namespace Esoft_Project
             }
         }
 
-        private void textBoxRooms_KeyPress(object sender, KeyPressEventArgs e)
+        void textBoxRooms_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
 
@@ -207,7 +207,7 @@ namespace Esoft_Project
             }
         }
 
-        private void textBoxFloors_Number_KeyPress(object sender, KeyPressEventArgs e)
+        void textBoxFloors_Number_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
 
@@ -218,7 +218,7 @@ namespace Esoft_Project
             }
         }
 
-        private void textBoxLongtitude_KeyPress(object sender, KeyPressEventArgs e)
+        void textBoxLongtitude_KeyPress(object sender, KeyPressEventArgs e)
         {
             //ограничение на заполнение значений в долготу
             char number = e.KeyChar;
@@ -249,7 +249,7 @@ namespace Esoft_Project
             }
         }
 
-        private void textBoxTotalArea_KeyPress(object sender, KeyPressEventArgs e)
+        void textBoxTotalArea_KeyPress(object sender, KeyPressEventArgs e)
         {
             //ограничение на заполнение значений в Площаде
             char number = e.KeyChar;
@@ -280,7 +280,7 @@ namespace Esoft_Project
             }
         }
 
-        private void textBoxLatitude_KeyPress(object sender, KeyPressEventArgs e)
+        void textBoxLatitude_KeyPress(object sender, KeyPressEventArgs e)
         {
             //ограничение на заполнение значений в широте
             char number = e.KeyChar;
@@ -311,7 +311,7 @@ namespace Esoft_Project
             }
         }
 
-        private void buttonEdit_Click(object sender, EventArgs e)
+        void buttonEdit_Click(object sender, EventArgs e)
         {
             if (comboBoxType.SelectedIndex == 0)
             {
@@ -368,7 +368,7 @@ namespace Esoft_Project
             }
         }
 
-        private void listViewApartament_SelectedIndexChanged(object sender, EventArgs e)
+        void listViewApartament_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listViewApartament.SelectedItems.Count == 1)
             {
@@ -386,7 +386,7 @@ namespace Esoft_Project
             }
         }
 
-        private void listViewHouse_SelectedIndexChanged(object sender, EventArgs e)
+        void listViewHouse_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listViewHouse.SelectedItems.Count == 1)
             {
@@ -403,7 +403,7 @@ namespace Esoft_Project
             }
         }
 
-        private void listViewLand_SelectedIndexChanged(object sender, EventArgs e)
+        void listViewLand_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listViewLand.SelectedItems.Count == 1)
             {
@@ -416,7 +416,7 @@ namespace Esoft_Project
             }
         }
 
-        private void buttonDel_Click(object sender, EventArgs e)
+        void buttonDel_Click(object sender, EventArgs e)
         {
             if (comboBoxType.SelectedIndex == 0)
             {
@@ -450,7 +450,7 @@ namespace Esoft_Project
             }
         }
 
-        private void ComboBoxPressFalse(object sender, KeyPressEventArgs e)
+        void ComboBoxPressFalse(object sender, KeyPressEventArgs e)
         {
             char num = e.KeyChar;
             if (num == e.KeyChar)

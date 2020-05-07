@@ -42,7 +42,7 @@
             this.labelLastName = new System.Windows.Forms.Label();
             this.labelMiddleName = new System.Windows.Forms.Label();
             this.labelDealShare = new System.Windows.Forms.Label();
-            this.buttonDel = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -162,19 +162,19 @@
             this.labelDealShare.TabIndex = 8;
             this.labelDealShare.Text = "Доля от комисии";
             // 
-            // buttonDel
+            // buttonDelete
             // 
-            this.buttonDel.BackColor = System.Drawing.Color.White;
-            this.buttonDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDel.Location = new System.Drawing.Point(450, 286);
-            this.buttonDel.Margin = new System.Windows.Forms.Padding(15);
-            this.buttonDel.Name = "buttonDel";
-            this.buttonDel.Padding = new System.Windows.Forms.Padding(10);
-            this.buttonDel.Size = new System.Drawing.Size(141, 53);
-            this.buttonDel.TabIndex = 16;
-            this.buttonDel.Text = "Удалить";
-            this.buttonDel.UseVisualStyleBackColor = false;
-            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
+            this.buttonDelete.BackColor = System.Drawing.Color.White;
+            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDelete.Location = new System.Drawing.Point(450, 286);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(15);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Padding = new System.Windows.Forms.Padding(10);
+            this.buttonDelete.Size = new System.Drawing.Size(141, 53);
+            this.buttonDelete.TabIndex = 16;
+            this.buttonDelete.Text = "Удалить";
+            this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonEdit
             // 
@@ -209,7 +209,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(669, 357);
-            this.Controls.Add(this.buttonDel);
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.labelDealShare);
@@ -245,7 +245,7 @@
         private System.Windows.Forms.Label labelLastName;
         private System.Windows.Forms.Label labelMiddleName;
         private System.Windows.Forms.Label labelDealShare;
-        private System.Windows.Forms.Button buttonDel;
+        private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonEdit;
         private System.Windows.Forms.Button buttonAdd;
     }

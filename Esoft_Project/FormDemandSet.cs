@@ -96,7 +96,7 @@ namespace Esoft_Project
             }
         }
 
-        private void ComboBoxPressFalse(object sender, KeyPressEventArgs e)
+        void ComboBoxPressFalse(object sender, KeyPressEventArgs e)
         {
             char num = e.KeyChar;
             if (num == e.KeyChar)
@@ -105,7 +105,7 @@ namespace Esoft_Project
             }
         }
 
-        private void comboBoxType_SelectedIndexChanged(object sender, EventArgs e)
+        void comboBoxType_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxType.SelectedItem.ToString() == "Квартира")
             {
@@ -181,7 +181,7 @@ namespace Esoft_Project
             }
         }
 
-        private void buttonAdd_Click(object sender, EventArgs e)
+        void buttonAdd_Click(object sender, EventArgs e)
         {
             if (comboBoxAgents.Text != "" && comboBoxClients.Text != "")
             {
@@ -220,7 +220,7 @@ namespace Esoft_Project
                 MessageBox.Show("Не заполнены либо агенты либо клиенты!");
             }
         }
-        private void buttonEdit_Click(object sender, EventArgs e)
+        void buttonEdit_Click(object sender, EventArgs e)
         {
             if (comboBoxType.SelectedItem.ToString() == "Квартира")
             {
@@ -277,7 +277,7 @@ namespace Esoft_Project
             ShowListViewApartament();
             ShowListViewHouse();
         }
-        private void buttonDel_Click(object sender, EventArgs e)
+        void buttonDel_Click(object sender, EventArgs e)
         {
             if (comboBoxType.SelectedItem.ToString() == "Квартира")
             {
@@ -311,7 +311,7 @@ namespace Esoft_Project
             ShowListViewHouse();
         }
 
-        private void onlyNumbers(object sender, KeyPressEventArgs e)
+        void onlyNumbers(object sender, KeyPressEventArgs e)
         {
             char num = e.KeyChar;
             if (!Char.IsDigit(num) && num != 8 || num == 127)
@@ -320,7 +320,7 @@ namespace Esoft_Project
             }
         }
 
-        private void MinAreaFloatNumbers(object sender, KeyPressEventArgs e)
+        void MinAreaFloatNumbers(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
             if (textBoxMinArea.Text == "")
@@ -350,7 +350,7 @@ namespace Esoft_Project
             }
         }
 
-        private void MaxAreaFloatNumbers(object sender, KeyPressEventArgs e)
+        void MaxAreaFloatNumbers(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
             if (textBoxMaxArea.Text == "")
@@ -379,7 +379,7 @@ namespace Esoft_Project
             }
         }
 
-        private void listViewLand_SelectedIndexChanged(object sender, EventArgs e)
+        void listViewLand_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listViewLand.SelectedItems.Count == 1)
             {
@@ -393,7 +393,7 @@ namespace Esoft_Project
             }
         }
 
-        private void listViewApartament_SelectedIndexChanged(object sender, EventArgs e)
+        void listViewApartament_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listViewApartament.SelectedItems.Count == 1)
             {
@@ -413,7 +413,7 @@ namespace Esoft_Project
             }
         }
 
-        private void listViewHouse_SelectedIndexChanged(object sender, EventArgs e)
+        void listViewHouse_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listViewHouse.SelectedItems.Count == 1)
             {

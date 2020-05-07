@@ -42,12 +42,12 @@ namespace Esoft_Project
             }
         }
 
-        private void comboBoxSupply_SelectedIndexChanged(object sender, EventArgs e)
+        void comboBoxSupply_SelectedIndexChanged(object sender, EventArgs e)
         {
             Deductions();
         }
 
-        private void comboBoxDemand_SelectedIndexChanged(object sender, EventArgs e)
+        void comboBoxDemand_SelectedIndexChanged(object sender, EventArgs e)
         {
             Deductions();
         }
@@ -132,7 +132,7 @@ namespace Esoft_Project
             listViewDealSet.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
 
-        private void comboBoxPressFalse(object sender, KeyPressEventArgs e)
+        void comboBoxPressFalse(object sender, KeyPressEventArgs e)
         {
             char num = e.KeyChar;
             if (num == e.KeyChar)
@@ -141,7 +141,7 @@ namespace Esoft_Project
             }
         }
 
-        private void onlyNumberSellerClient(object sender, KeyPressEventArgs e)
+        void onlyNumberSellerClient(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
             if (textBoxSellerCompanyDeductions.Text == "")
@@ -171,7 +171,7 @@ namespace Esoft_Project
             }
         }
 
-        private void onlyNumberAgentSellerClient(object sender, KeyPressEventArgs e)
+        void onlyNumberAgentSellerClient(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
             if (textBoxAgentSellerDeductions.Text == "")
@@ -201,7 +201,7 @@ namespace Esoft_Project
             }
         }
 
-        private void onlyNumberClientBuyer(object sender, KeyPressEventArgs e)
+        void onlyNumberClientBuyer(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
             if (textBoxCustomerDeductions.Text == "")
@@ -231,7 +231,7 @@ namespace Esoft_Project
             }
         }
 
-        private void onlyBuyerAgentClientBuyer(object sender, KeyPressEventArgs e)
+        void onlyBuyerAgentClientBuyer(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
             if (textBoxAgentCustomerDeductions.Text == "")
@@ -261,7 +261,7 @@ namespace Esoft_Project
             }
         }
 
-        private void buttonAdd_Click(object sender, EventArgs e)
+        void buttonAdd_Click(object sender, EventArgs e)
         {
             if (comboBoxDemand.SelectedItem != null && comboBoxSupply.SelectedItem != null)
             {
@@ -278,7 +278,7 @@ namespace Esoft_Project
             }
         }
 
-        private void buttonEdit_Click(object sender, EventArgs e)
+        void buttonEdit_Click(object sender, EventArgs e)
         {
             if (listViewDealSet.SelectedItems.Count == 1)
             {
@@ -295,7 +295,7 @@ namespace Esoft_Project
             }
         }
 
-        private void buttonDel_Click(object sender, EventArgs e)
+        void buttonDel_Click(object sender, EventArgs e)
         {
             try
             {
@@ -320,7 +320,7 @@ namespace Esoft_Project
             }
         }
 
-        private void listViewDealSet_SelectedIndexChanged(object sender, EventArgs e)
+        void listViewDealSet_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listViewDealSet.SelectedItems.Count == 1)
             {

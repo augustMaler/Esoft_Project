@@ -89,7 +89,7 @@ namespace Esoft_Project
             listViewSupplySet.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
 
-        private void buttonAdd_Click(object sender, EventArgs e)
+        void buttonAdd_Click(object sender, EventArgs e)
         {
             if (comboBoxAgents.SelectedItem != null && comboBoxClients.SelectedItem != null && comboBoxRealEstate.SelectedItem != null && textBoxPrice.Text != "")
             {
@@ -105,7 +105,7 @@ namespace Esoft_Project
             else MessageBox.Show("Данные не выбраны", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void textBoxPrice_KeyPress(object sender, KeyPressEventArgs e)
+        void textBoxPrice_KeyPress(object sender, KeyPressEventArgs e)
         {
             char num = e.KeyChar;
             if (!Char.IsDigit(num) && num != 8 || num == 127)
@@ -114,7 +114,7 @@ namespace Esoft_Project
             }
         }
 
-        private void listViewSupplySet_SelectedIndexChanged(object sender, EventArgs e)
+        void listViewSupplySet_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listViewSupplySet.SelectedItems.Count == 1)
             {
@@ -133,7 +133,7 @@ namespace Esoft_Project
             }
         }
 
-        private void buttonDel_Click(object sender, EventArgs e)
+        void buttonDel_Click(object sender, EventArgs e)
         {
             try
             {
@@ -155,7 +155,7 @@ namespace Esoft_Project
             }
         }
 
-        private void buttonEdit_Click(object sender, EventArgs e)
+        void buttonEdit_Click(object sender, EventArgs e)
         {
             if (listViewSupplySet.SelectedItems.Count == 1)
             {
@@ -168,7 +168,7 @@ namespace Esoft_Project
                 ShowSupplySet();
             }
         }
-        private void comboBoxKeyPressFalse(object sender, KeyPressEventArgs e)
+        void comboBoxKeyPressFalse(object sender, KeyPressEventArgs e)
         {
             char num = e.KeyChar;
             if (num == e.KeyChar)

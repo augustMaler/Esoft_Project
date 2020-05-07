@@ -35,7 +35,7 @@ namespace Esoft_Project
             listViewAgents.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
 
-        private void buttonAdd_Click(object sender, EventArgs e)
+        void buttonAdd_Click(object sender, EventArgs e)
         {
             if (textBoxNameAgent.Text != "" && textBoxLastNameAgent.Text != "" && textBoxMiddleNameAgent.Text != "")
             {
@@ -62,8 +62,7 @@ namespace Esoft_Project
                 ShowAgents();
             }
         }
-
-        private void textBoxDealShare_KeyPress(object sender, KeyPressEventArgs e)
+        void textBoxDealShare_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
 
@@ -72,8 +71,7 @@ namespace Esoft_Project
                 e.Handled = true;
             }
         }
-
-        private void buttonEdit_Click(object sender, EventArgs e)
+        void buttonEdit_Click(object sender, EventArgs e)
         {
             if (textBoxNameAgent.Text != "" && textBoxLastNameAgent.Text != "" && textBoxMiddleNameAgent.Text != "")
             {
@@ -89,8 +87,7 @@ namespace Esoft_Project
                 ShowAgents();
             }
         }
-
-        private void listViewAgents_SelectedIndexChanged(object sender, EventArgs e)
+        void listViewAgents_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listViewAgents.SelectedItems.Count == 1)
             {
@@ -108,8 +105,7 @@ namespace Esoft_Project
                 textBoxDealShare.Text = "";
             }
         }
-
-        private void buttonDel_Click(object sender, EventArgs e)
+        void buttonDelete_Click(object sender, EventArgs e)
         {
             try
             {
