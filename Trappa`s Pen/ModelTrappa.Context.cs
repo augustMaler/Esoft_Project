@@ -13,10 +13,10 @@ namespace Esoft_Project
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class WFTutorialEntities : DbContext
+    public partial class TrappaPenEntities2 : DbContext
     {
-        public WFTutorialEntities()
-            : base("name=WFTutorialEntities")
+        public TrappaPenEntities2()
+            : base("name=TrappaPenEntities2")
         {
         }
     
@@ -25,11 +25,8 @@ namespace Esoft_Project
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<AgentsSet> AgentsSet { get; set; }
-        public virtual DbSet<ClientsSet> ClientsSet { get; set; }
-        public virtual DbSet<DealSet> DealSet { get; set; }
-        public virtual DbSet<DemandSet> DemandSet { get; set; }
-        public virtual DbSet<RealEstateSet> RealEstateSet { get; set; }
-        public virtual DbSet<SupplySet> SupplySet { get; set; }
+        public virtual DbSet<Clients> Clients { get; set; }
+        public virtual DbSet<Employees> Employees { get; set; }
+        public virtual DbSet<Goods> Goods { get; set; }
     }
 }

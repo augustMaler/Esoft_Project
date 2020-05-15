@@ -24,32 +24,14 @@ namespace Esoft_Project
         }
         void buttonOpenAgents_Click_1(object sender, EventArgs e)
         {
-            FormAgents formAgents = new FormAgents();
+            FormEmployees formAgents = new FormEmployees();
             formAgents.Show();
         }
 
         void buttonOpenRealEstates_Click_1(object sender, EventArgs e)
         {
-            FormRealEstate realEstate = new FormRealEstate();
-            realEstate.Show();
-        }
-
-        void buttonOpenDemands_Click_1(object sender, EventArgs e)
-        {
-            FormDemandSet formDemand = new FormDemandSet();
-            formDemand.Show();
-        }
-
-        void buttonOpenSupplies_Click(object sender, EventArgs e)
-        {
-            FormSupply formSupply = new FormSupply();
-            formSupply.Show();
-        }
-
-        void buttonOpenDeals_Click(object sender, EventArgs e)
-        {
-            FormDeal formDeal = new FormDeal();
-            formDeal.Show();
+            FormGoods goods = new FormGoods();
+            goods.Show();
         }
     }
 }

@@ -9,7 +9,7 @@ namespace Esoft_Project
     static class Program
     {
 
-        public static WFTutorialEntities wftDb = new WFTutorialEntities();
+        public static TrappaPenEntities2 TrappaDB = new TrappaPenEntities2();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>

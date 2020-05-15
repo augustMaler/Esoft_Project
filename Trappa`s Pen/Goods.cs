@@ -12,13 +12,12 @@ namespace Esoft_Project
     using System;
     using System.Collections.Generic;
     
-    public partial class DealSet
+    public partial class Goods
     {
         public int Id { get; set; }
-        public int IdSupply { get; set; }
-        public int IdDemand { get; set; }
-    
-        public virtual DemandSet DemandSet { get; set; }
-        public virtual SupplySet SupplySet { get; set; }
+        public string Name { get; set; }
+        public string Type { get; set; }
+        public Nullable<int> VendorCode { get; set; }
+        public Nullable<int> Price { get; set; }
     }
 }
